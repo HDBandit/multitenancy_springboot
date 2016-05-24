@@ -1,0 +1,16 @@
+multitenancy:
+   tenants:
+     - 
+       name: tenant_1
+       default: true
+       url: jdbc:mysql://localhost:3306/tenant_1?serverTimezone=UTC
+       username: user
+       password: pass
+       driver-class-name: com.mysql.jdbc.Driver
+     - 
+       name: tenant_2
+       default: false
+       url: jdbc:mysql://localhost:3306/tenant_2?serverTimezone=UTC
+       username: user
+       password: pass
+       driver-class-name: com.mysql.jdbc.Driver		
